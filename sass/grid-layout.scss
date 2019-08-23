@@ -1,0 +1,11 @@
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(384px, 1fr));
+  grid-gap: 24px;
+  grid-auto-rows: minmax(472px, 472px);
+  grid-auto-flow: dense;
+
+  width: 100%;
+
+  padding-bottom: 250px;
+}

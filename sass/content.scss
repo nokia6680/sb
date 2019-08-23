@@ -1,0 +1,4 @@
+.content {
+  @include container;
+  @include flex-setting(column, flex-start, center);
+}

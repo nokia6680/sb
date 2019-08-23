@@ -1,0 +1,70 @@
+.intro {
+  @include flex-setting(row, space-between, center);
+
+  width: 100%;
+
+  background-color: #ffffff;
+
+  margin-top: 24px;
+  margin-bottom: 32px;
+
+  padding: 20px 24px 32px 24px;
+
+  box-shadow: 0 0 10px rgba(7, 46, 58, 0.3);
+
+  &__image {
+    min-width: 544px;
+    height: 564px;
+
+    margin-right: 80px;
+  }
+
+  &__frame {
+    width: 100%;
+    height: auto;
+  }
+
+  &__details {
+    @include flex-setting(column, flex-start, flex-start);
+  }
+
+  &__title {
+    @include font-setting($primary-font, 4.5em, 1.1, 900, #072e3a);
+    text-transform: uppercase;
+
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  &__description {
+    @include font-setting($light-font, 1.5em, 1.5, 900, #072e3a);
+
+    margin: 0;
+    margin-bottom: 25px;
+
+    max-width: 544px;
+  }
+
+  &__controls {
+    @include flex-setting(row, flex-start, center);
+
+    &-btn {
+      @include font-setting($primary-font, 1.875em, 1.2, 900, #ffffff);
+
+      padding: 10px 20px;
+      text-decoration: none;
+
+      border-radius: 16px;
+
+      &--rules {
+        background-color: #27c0d7;
+        margin-right: 32px;
+      }
+
+      &--start {
+        background-color: #7ed321;
+        box-shadow: 0 0 10px rgba(116, 195, 30, 0.3);
+      }
+    }
+  }
+}

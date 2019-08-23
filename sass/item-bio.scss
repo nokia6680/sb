@@ -1,0 +1,111 @@
+.item-bio {
+  width: 100%;
+
+  position: relative;
+
+  @include flex-setting(row, flex-start, center);
+
+  &__photo {
+    min-width: 88px;
+    min-height: 88px;
+
+    position: relative;
+
+    @include flex-setting(column, center, center);
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      width: 56px;
+      height: 56px;
+
+      background-color: transparent;
+      border: 1px solid #072e3a;
+      border-radius: 28px;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      width: 88px;
+      height: 88px;
+
+      top: 0;
+      left: 0;
+
+      background-image: url('../img/photo-mask.png');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 88px 88px;
+    }
+  }
+
+  &__details {
+    @include flex-setting(column, flex-start, flex-start);
+  }
+
+  &__name {
+    @include font-setting($medium-font, 1em, 1.2, 500, #072e3a);
+  }
+
+  &__time {
+    @include font-setting($light-font, 0.62em, 1.2, 400, rgba(7, 46, 58, 0.5));
+  }
+
+  &__social {
+    position: relative;
+    width: 40px;
+    height: 32px;
+
+    background-color: #f8e234;
+
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    margin-right: -40px;
+    margin-left: auto;
+
+    &--instagram {
+      .fa-instagram::before {
+        position: absolute;
+        content: '\f16d';
+        font-size: 1.25em;
+        color: #ffffff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--facebook {
+      .fa-facebook-f::before {
+        position: absolute;
+        content: '\f39e';
+        font-size: 1.25em;
+        color: #ffffff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--vk {
+      .fa-vk::before {
+        position: absolute;
+        content: '\f189';
+        font-size: 1.25em;
+        color: #ffffff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
