@@ -9,8 +9,8 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -18,238 +18,117 @@
 </head>
 
 <body class="body">
+
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+<script type="text/javascript">
+  (function() {
+    VK.Widgets.Post("vk_post_803885_4030", 803885, 4030, 'dcFkMOIZfKZaNpO7FLmrosKe');
+  }());
+</script>
+
 	<!--Header-->
 	<header class="header">
-		<nav class="header-nav">
-
+		<div class="header__logo">
+			<a class="header__link" href="index.html" target="_self">
+				<img class="header__pic" src="img/bob-logo.svg" alt="SpongeBob Logo" />
+			</a>
+		</div>
+		<nav class="header__nav header-nav">
+			<a class="header-nav__link" href="#" target="_blank">#поздравьгубкубоба</a>
+			<ul class="header-nav__list nav-list">
+				<li class="nav-list__item">
+					<a class="nav-list__link" href="#" target="_self">Видео</a>
+				</li>
+				<li class="nav-list__item">
+					<a class="nav-list__link" href="#" target="_self">Игры</a>
+				</li>
+				<li class="nav-list__item">
+					<a class="nav-list__link" href="#" target="_self">Конкурс</a>
+				</li>
+			</ul>
+			<!--Menu btn-->
+			<div class="header-nav__toggle" id="nav-toggle">
+				<span class="header-nav__toggle-span header-nav__toggle-span--1"></span>
+				<span class="header-nav__toggle-span header-nav__toggle-span--1"></span>
+				<span class="header-nav__toggle-span header-nav__toggle-span--1"></span>
+			</div>
 		</nav>
 	</header>
 	<!--Main-->
 	<main class="main" id="main">
 		<section class="main__content content">
-			<div class="content__intro intro">
-				<div class="intro__image">
-					<picture class="intro__frame">
-						<source srcset="img/sb-round.webp" type="image/webp" />
-						<img class="intro__pic" src="img/sb-round.png" alt="SpongeBob" />
+			<div class="content__event event">
+				<div class="event__image">
+					<picture class="event__frame">
+						<source srcset="img/sb-event.webp" type="image/webp" />
+						<img class="event__pic" src="img/sb-event.png" alt="SpongeBob" />
 					</picture>
 				</div>
-				<div class="intro__details">
-					<h2 class="intro__title">Участвуй в&nbsp;конкурсе!</h2>
-					<p class="intro__description">Скорее жми кнопку ниже, заполни форму, и придумай самое лучшее поздравление для Губки Боба. Нажимай кнопку нижи, заполни форму, и придумай самое лучшее поздравление для Губки Боба.</p>
-					<div class="intro__controls">
-						<a class="intro__controls-btn intro__controls-btn--rules" href="#" target="_self" title="">Правила</a>
-						<a class="intro__controls-btn intro__controls-btn--start" href="#" target="_self" title="">Участвовать</a>
+				<div class="event__details">
+					<h2 class="event__title">Конкурс&nbsp;рисунков</h2>
+					<p class="event__description">Нарисуй своего любимого жителя Бикини Боттом и выиграй коллекционную игрушку одного из персонажей! Публикуй рисунки в Instagram и ВК с хештегом #губкабобконкурс или загружай прямо на этот сайт. Лучшие работы мы опубликуем!</p>
+					<div class="event__controls">
+						<a class="event__controls-btn event__controls-btn--rules" href="#" target="_self" title="">Правила</a>
+						<a class="event__controls-btn event__controls-btn--start" href="#" target="_self" title="">Участвовать</a>
 					</div>
 				</div>
 			</div>
 			<div class="main__grid grid-layout">
-				<!--Single grid item-->
+				<!--Single grid item image + bio-->
 				<div class="grid-layout__item grid-item">
 					<picture class="grid-item__frame">
 						<source srcset="img/sponge-1.webp" type="image/webp" />
 						<img class="grid-item__pic" src="img/sponge-1.png" alt="" />
 					</picture>
-					<div class="grid-item__info grid-item__info--instagram">
-						<div class="grid-item__bio item-bio">
-							<div class="item-bio__photo">
-								<img class="item-bio__pic" src="img/user-1.png" alt="Имя юзера" />
-							</div>
-							<div class="item-bio__details">
-								<b class="item-bio__name">SpongeBob SquarePants</b>
-								<time class="item-bio__time" pubdate datetime="2019-05-25">25.05.2019</time>
-							</div>
-							<a class="item-bio__social item-bio__social--instagram" href="#" target="_blank">
-								<i class="fab fa-instagram"></i>
-							</a>
-						</div>
+					<div class="grid-item__info">
+						<b class="grid-item__info-name">SpongeBob SquarePants</b>
+						<time class="grid-item__info-time" pubdate datetime="2019-05-25">25.05.2019</time>
 					</div>
 				</div>
-				<!--Single grid item-->
+				<!--Single grid item image + text + bio-->
 				<div class="grid-layout__item grid-item grid-item--tall-2">
 					<picture class="grid-item__frame">
 						<source srcset="img/sponge-1.webp" type="image/webp" />
 						<img class="grid-item__pic" src="img/sponge-1.png" alt="" />
 					</picture>
-					<div class="grid-item__info grid-item__info--vk">
-						<!--Опционально - текст поздравления-->
-						<p class="grid-item__description">«Губка Боб Квадратные Штаны», также известный, как «Спанч Боб Сквэр Пэнтс» (англ. SpongeBob SquarePants) — американский мультипликационный сериал, который транслируется на телеканале «Nickelodeon». Появился в эфире 1 мая 1999 года и стал одной из самых популярных анимационных программ телевидения. Это первый по продолжительности показа анимированный сериал телеканала Nickelodeon, обогнавший «Ох уж эти детки!» (англ. «Rugrats») — на данный момент он насчитывает 11 полных сезонов и пять эпизодов двенадцатого. В мае 2017 года мультсериал был продлён на двенадцатый сезон. Действия анимационного сериала…</p>
-						<div class="grid-item__bio item-bio">
-							<div class="item-bio__photo">
-								<img class="item-bio__pic" src="img/user-1.png" alt="Имя юзера" />
-							</div>
-							<div class="item-bio__details">
-								<b class="item-bio__name">SpongeBob SquarePants</b>
-								<time class="item-bio__time" pubdate datetime="2019-05-25">25.05.2019</time>
-							</div>
-							<a class="item-bio__social item-bio__social--vk" href="#" target="_blank">
-								<i class="fab fa-vk"></i>
-							</a>
-						</div>
+					<!--Опционально - текст поздравления-->
+					<p class="grid-item__description">«Губка Боб Квадратные Штаны», также известный, как «Спанч Боб Сквэр Пэнтс» (англ. SpongeBob SquarePants) — американский мультипликационный сериал, который транслируется на телеканале «Nickelodeon». Появился в эфире 1 мая 1999 года и стал одной из самых популярных анимационных программ телевидения. Это первый по продолжительности показа анимированный сериал телеканала Nickelodeon, обогнавший «Ох уж эти детки!» (англ. «Rugrats») — на данный момент он насчитывает 11 полных сезонов и пять эпизодов двенадцатого. В мае 2017 года мультсериал был продлён на двенадцатый сезон. Действия анимационного сериала…</p>
+					<div class="grid-item__info">
+						<b class="grid-item__info-name">SpongeBob SquarePants</b>
+						<time class="grid-item__info-time" pubdate datetime="2019-05-25">25.05.2019</time>
 					</div>
 				</div>
-				<!--Single grid item-->
+				<!--Single grid item image + bio-->
 				<div class="grid-layout__item grid-item">
 					<picture class="grid-item__frame">
 						<source srcset="img/sponge-1.webp" type="image/webp" />
 						<img class="grid-item__pic" src="img/sponge-1.png" alt="" />
 					</picture>
-					<div class="grid-item__info grid-item__info--instagram">
-						<div class="grid-item__bio item-bio">
-							<div class="item-bio__photo">
-								<img class="item-bio__pic" src="img/user-1.png" alt="Имя юзера" />
-							</div>
-							<div class="item-bio__details">
-								<b class="item-bio__name">SpongeBob SquarePants</b>
-								<time class="item-bio__time" pubdate datetime="2019-05-25">25.05.2019</time>
-							</div>
-							<a class="item-bio__social item-bio__social--instagram" href="#" target="_blank">
-								<i class="fab fa-instagram"></i>
-							</a>
-						</div>
+					<div class="grid-item__info">
+						<b class="grid-item__info-name">SpongeBob SquarePants</b>
+						<time class="grid-item__info-time" pubdate datetime="2019-05-25">25.05.2019</time>
 					</div>
 				</div>
-				<!--Single grid item-->
+				<!--Single grid item text + bio-->
 				<div class="grid-layout__item grid-item">
-					<picture class="grid-item__frame">
-						<source srcset="img/sponge-1.webp" type="image/webp" />
-						<img class="grid-item__pic" src="img/sponge-1.png" alt="" />
-					</picture>
-					<div class="grid-item__info grid-item__info--instagram">
-						<div class="grid-item__bio item-bio">
-							<div class="item-bio__photo">
-								<img class="item-bio__pic" src="img/user-1.png" alt="Имя юзера" />
-							</div>
-							<div class="item-bio__details">
-								<b class="item-bio__name">SpongeBob SquarePants</b>
-								<time class="item-bio__time" pubdate datetime="2019-05-25">25.05.2019</time>
-							</div>
-							<a class="item-bio__social item-bio__social--instagram" href="#" target="_blank">
-								<i class="fab fa-instagram"></i>
-							</a>
-						</div>
+					<!--Опционально - текст поздравления-->
+					<p class="grid-item__description grid-item__description--only">«Губка Боб Квадратные Штаны», также известный, как «Спанч Боб Сквэр Пэнтс» (англ. SpongeBob SquarePants) — американский мультипликационный сериал, который транслируется на телеканале «Nickelodeon». Появился в эфире 1 мая 1999 года и стал одной из самых популярных анимационных программ телевидения. Это первый по продолжительности показа анимированный сериал телеканала Nickelodeon, обогнавший «Ох уж эти детки!» (англ. «Rugrats») — на данный момент он насчитывает 11 полных сезонов и пять эпизодов двенадцатого. В мае 2017 года мультсериал был продлён на двенадцатый сезон. Действия анимационного сериала…</p>
+					<div class="grid-item__info">
+						<b class="grid-item__info-name">SpongeBob SquarePants</b>
+						<time class="grid-item__info-time" pubdate datetime="2019-05-25">25.05.2019</time>
 					</div>
 				</div>
-				<!--Single grid item-->
+				<!--Single grid item EMBED instagram-->
 				<div class="grid-layout__item grid-item">
-					<picture class="grid-item__frame">
-						<source srcset="img/sponge-1.webp" type="image/webp" />
-						<img class="grid-item__pic" src="img/sponge-1.png" alt="" />
-					</picture>
-					<div class="grid-item__info grid-item__info--instagram">
-						<div class="grid-item__bio item-bio">
-							<div class="item-bio__photo">
-								<img class="item-bio__pic" src="img/user-1.png" alt="Имя юзера" />
-							</div>
-							<div class="item-bio__details">
-								<b class="item-bio__name">SpongeBob SquarePants</b>
-								<time class="item-bio__time" pubdate datetime="2019-05-25">25.05.2019</time>
-							</div>
-							<a class="item-bio__social item-bio__social--instagram" href="#" target="_blank">
-								<i class="fab fa-instagram"></i>
-							</a>
-						</div>
-					</div>
+					<iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/p/B4KZLovIbCY/embed/?cr=1&amp;v=12&amp;wp=326&amp;rd=http%3A%2F%2Flocalhost%3A3000&amp;rp=%2F#%7B%22ci%22%3A0%2C%22os%22%3A435.075000001234%2C%22ls%22%3A328.3800000062911%2C%22le%22%3A362.34500000136904%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="611" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: transparent; border-radius: 0; border: none; padding: 0; margin: 0; display: flex; min-width: 272px; max-width: 272px"></iframe>
 				</div>
-				<!--Single grid item-->
-				<div class="grid-layout__item grid-item grid-item--wide-2 grid-item--wide-pic">
-					<picture class="grid-item__frame grid-item__frame--full">
-						<source srcset="img/full-pic.webp" type="image/webp" />
-						<img class="grid-item__pic grid-item__pic--full" src="img/full-pic.png" alt="" />
-					</picture>
-				</div>
-				<!--Single grid item-->
+				<!--Single grid item EMBED vk-->
 				<div class="grid-layout__item grid-item">
-					<picture class="grid-item__frame">
-						<source srcset="img/sponge-1.webp" type="image/webp" />
-						<img class="grid-item__pic" src="img/sponge-1.png" alt="" />
-					</picture>
-					<div class="grid-item__info grid-item__info--instagram">
-						<div class="grid-item__bio item-bio">
-							<div class="item-bio__photo">
-								<img class="item-bio__pic" src="img/user-1.png" alt="Имя юзера" />
-							</div>
-							<div class="item-bio__details">
-								<b class="item-bio__name">SpongeBob SquarePants</b>
-								<time class="item-bio__time" pubdate datetime="2019-05-25">25.05.2019</time>
-							</div>
-							<a class="item-bio__social item-bio__social--instagram" href="#" target="_blank">
-								<i class="fab fa-instagram"></i>
-							</a>
-						</div>
-					</div>
+					<div class="grid-item-vk" id="vk_post_803885_4030"></div>
 				</div>
-				<!--Single grid item-->
-				<div class="grid-layout__item grid-item grid-item--tall-2">
-					<picture class="grid-item__frame">
-						<source srcset="img/sponge-1.webp" type="image/webp" />
-						<img class="grid-item__pic" src="img/sponge-1.png" alt="" />
-					</picture>
-					<div class="grid-item__info grid-item__info--vk">
-						<!--Опционально - текст поздравления-->
-						<p class="grid-item__description">«Губка Боб Квадратные Штаны», также известный, как «Спанч Боб Сквэр Пэнтс» (англ. SpongeBob SquarePants) — американский мультипликационный сериал, который транслируется на телеканале «Nickelodeon». Появился в эфире 1 мая 1999 года и стал одной из самых популярных анимационных программ телевидения. Это первый по продолжительности показа анимированный сериал телеканала Nickelodeon, обогнавший «Ох уж эти детки!» (англ. «Rugrats») — на данный момент он насчитывает 11 полных сезонов и пять эпизодов двенадцатого. В мае 2017 года мультсериал был продлён на двенадцатый сезон. Действия анимационного сериала…</p>
-						<div class="grid-item__bio item-bio">
-							<div class="item-bio__photo">
-								<img class="item-bio__pic" src="img/user-1.png" alt="Имя юзера" />
-							</div>
-							<div class="item-bio__details">
-								<b class="item-bio__name">SpongeBob SquarePants</b>
-								<time class="item-bio__time" pubdate datetime="2019-05-25">25.05.2019</time>
-							</div>
-							<a class="item-bio__social item-bio__social--vk" href="#" target="_blank">
-								<i class="fab fa-vk"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<!--Single grid item-->
-				<div class="grid-layout__item grid-item grid-item--wide-2 grid-item--wide-pic">
-					<picture class="grid-item__frame grid-item__frame--full">
-						<source srcset="img/full-pic.webp" type="image/webp" />
-						<img class="grid-item__pic grid-item__pic--full" src="img/full-pic.png" alt="" />
-					</picture>
-				</div>
-				<!--Single grid item-->
+				<!--Single grid item EMBED youtube-->
 				<div class="grid-layout__item grid-item">
-					<picture class="grid-item__frame">
-						<source srcset="img/sponge-1.webp" type="image/webp" />
-						<img class="grid-item__pic" src="img/sponge-1.png" alt="" />
-					</picture>
-					<div class="grid-item__info grid-item__info--instagram">
-						<div class="grid-item__bio item-bio">
-							<div class="item-bio__photo">
-								<img class="item-bio__pic" src="img/user-1.png" alt="Имя юзера" />
-							</div>
-							<div class="item-bio__details">
-								<b class="item-bio__name">SpongeBob SquarePants</b>
-								<time class="item-bio__time" pubdate datetime="2019-05-25">25.05.2019</time>
-							</div>
-							<a class="item-bio__social item-bio__social--instagram" href="#" target="_blank">
-								<i class="fab fa-instagram"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<!--Single grid item-->
-				<div class="grid-layout__item grid-item">
-					<picture class="grid-item__frame">
-						<source srcset="img/sponge-1.webp" type="image/webp" />
-						<img class="grid-item__pic" src="img/sponge-1.png" alt="" />
-					</picture>
-					<div class="grid-item__info grid-item__info--instagram">
-						<div class="grid-item__bio item-bio">
-							<div class="item-bio__photo">
-								<img class="item-bio__pic" src="img/user-1.png" alt="Имя юзера" />
-							</div>
-							<div class="item-bio__details">
-								<b class="item-bio__name">SpongeBob SquarePants</b>
-								<time class="item-bio__time" pubdate datetime="2019-05-25">25.05.2019</time>
-							</div>
-							<a class="item-bio__social item-bio__social--instagram" href="#" target="_blank">
-								<i class="fab fa-instagram"></i>
-							</a>
-						</div>
-					</div>
+					<iframe class="grid-item-youtube" src="https://www.youtube.com/embed/NeQM1c-XCDc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 			<!---->
@@ -260,9 +139,60 @@
 	<footer class="footer">
 
 	</footer>
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<!--Popup event-->
+	<div class="popup-event" style="display: none;">
+		<div class="popup-event__wrapper">
+			<button class="popup-event__close" type="button"></button>
+			<div class="popup-event__header">
+				<h3 class="popup-event__title">Загрузи свой рисунок и заполни форму ниже</h3>
+			</div>
+			<form class="popup-event__form event-form" method="post" action="#">
+				<div class="event-form__wrapper event-form__wrapper--choose">
+					<p class="event-form__description">Перетащи свой рисунок сюда или воспользуйся кнопкой</p>
+					<input type="file" name="file" id="file" class="event-form__input inputfile visually-hidden" data-multiple-caption="{count} files selected" multiple />
+					<label class="event-form__label" for="file">Выбери рисунок</label>
+				</div>
+				<ul class="event-form__list reg-list">
+					<li class="reg-list__item">
+						<label class="reg-list__label" for="name">Твоё имя:</label>
+						<input class="reg-list__input" type="text" name="name" id="name" />
+						<span class="reg-list__error reg-list__error--name">Ты забыл написать своё имя!</span>
+						<span class="reg-list__note reg-list__note--correct"></span>
+						<span class="reg-list__note reg-list__note--error hidden"></span>
+					</li>
+					<li class="reg-list__item">
+						<label class="reg-list__label" for="tel">Номер телефона:</label>
+						<input class="reg-list__input reg-list__input--tel" type="tel" name="tel" id="tel" />
+						<span class="reg-list__error reg-list__error--tel">Ты забыл написать номер телефона!</span>
+						<span class="reg-list__note reg-list__note--correct hidden"></span>
+						<span class="reg-list__note reg-list__note--error"></span>
+					</li>
+					<li class="reg-list__item reg-list__item--agreement">
+						<input class="reg-list__checkbox reg-list__checkbox--agreement visually-hidden" type="checkbox" name="agree" id="agree" required checked />
+						<label class="reg-list__label reg-list__label--checkbox reg-list__label--agreement" for="agree">Согласен на <a class="reg-list__label--link" href="#" target="_blank">обработку моих персональных данных</a></label>
+						<span class="reg-list__error reg-list__error--required">Это поле должно быть заполнено!</span>
+					</li>
+					<li class="reg-list__item reg-list__item--policy">
+						<input class="reg-list__checkbox reg-list__checkbox--policy visually-hidden" type="checkbox" name="policy" id="policy" required checked />
+						<label class="reg-list__label reg-list__label--checkbox reg-list__label--policy" for="policy">Согласен с <a class="reg-list__label--link" href="#" target="_blank">условиями проведения конкурсов</a></label>
+						<span class="reg-list__error reg-list__error--required">Это поле должно быть заполнено!</span>
+					</li>
+				</ul>
+				<button class="event-form__submit" type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+	<!--Popup success-->
+	<div class="popup-success" style="display: none;">
+		<div class="popup-success__wrapper">
+			<button class="popup-success__close" type="button"></button>
+			<h3 class="popup-success__title">Спасибо!</h3>
+			<p class="popup-success__description">Твой рисунок скоро будет опубликован. Победитель будет объявлен 17 января.</p>
+		</div>
+	</div>
+	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/grid.js"></script>
 </body>
 
 </html>

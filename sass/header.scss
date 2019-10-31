@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, center);
+
+  position: relative;
+
+  &__logo {
+    background-image: url('../img/header-bg.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include flex-setting(column, center, center);
+
+    width: 100%;
+    height: 88px;
+  }
+
+  &__pic {
+    max-height: 88px;
+  }
+}

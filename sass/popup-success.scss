@@ -1,0 +1,95 @@
+.popup-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+
+    width: 272px;
+    height: 192px;
+
+    padding-top: 1.25rem;
+
+    background-color: #fff;
+
+    background-image: url('../img/wave.png');
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      width: 100%;
+      height: 100%;
+
+      background-color: rgba(255, 255, 255, 0.65);
+
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      width: 188px;
+      height: 66px;
+
+      bottom: 0;
+      left: 50%;
+
+      transform:translateX(-50%);
+
+      background-image: url('../img/sb-half.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom center;
+    }
+  }
+
+  &__close {
+    @extend .popup-event__close;
+  }
+
+  &__title {
+    @include font-setting($base-font, 1.375rem, 1, 900, #000);
+
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.5rem;
+
+    z-index: 2;
+  }
+
+  &__description {
+    @include font-setting($base-font, 0.875rem, 1.5rem, 400, #000);
+    max-width: 240px;
+    text-align: center;
+    margin: 0;
+
+    z-index: 2;
+  }
+}

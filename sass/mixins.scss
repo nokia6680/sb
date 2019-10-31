@@ -1,21 +1,11 @@
 @mixin container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-  /*
   @media only screen and (min-width: $mobile) {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 1.5rem;
   }
 
-  @media only screen and (min-width: $smt) {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
 
   @media only screen and (min-width: $tablet) {
     max-width: 100%;
@@ -23,23 +13,12 @@
     padding: 0 30px;
   }
 
-  @media only screen and (min-width: $laptop-hd) {
-    max-width: 1150px;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  @media only screen and (min-width: $laptop-wide) {
-    max-width: 1430px;
-    margin: 0 auto;
-    padding: 0;
-  }
 
   @media only screen and (min-width: $widebook-hd) {
     width: 100%;
     margin: 0 auto;
     padding: 0;
-  }*/
+  }
 }
 
 @mixin checkbox-default {
@@ -48,18 +27,18 @@
   cursor: pointer;
 
   position: relative;
-  padding-left: 25px;
+  padding-left: 20px;
 
   @media only screen and (min-width: $hdm) {
-    padding-left: 32px;
+
   }
 
   @media only screen and (min-width: $laptop) {
-    padding-left: 25px;
+
   }
 
   @media only screen and (min-width: $widebook-hd) {
-    padding-left: 32px;
+
   }
 }
 
@@ -68,28 +47,25 @@
   content: "";
   display: block;
 
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
 
-  top: -6px;
+  top: -5px;
   left: 0;
 
-  border: 2px solid #aab7b9;
+  border: 1px solid #a6a6a6;
   background-color: transparent;
 
   @media only screen and (min-width: $hdm) {
-    width: 24px;
-    height: 24px;
+
   }
 
   @media only screen and (min-width: $laptop) {
-    width: 18px;
-    height: 18px;
+
   }
 
   @media only screen and (min-width: $widebook-hd) {
-    width: 24px;
-    height: 24px;
+
   }
 }
 
@@ -98,27 +74,27 @@
   content: "";
   display: block;
 
-  width: 10px;
-  height: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='14' viewBox='0 0 15 14'%3E%3Cg%3E%3Cg clip-path='url(%23clip-A165A3CF-E2B3-4C7D-8B30-8071A05B03BE)'%3E%3Cpath fill='%235cd14c' d='M14.403.251c-.647-.427-1.555-.295-2.028.29L5.034 9.65l-2.443-2.8c-.498-.569-1.41-.666-2.039-.217-.63.449-.736 1.277-.24 1.844L5.126 14l9.595-11.913c.473-.587.33-1.408-.318-1.836'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15px;
+  height: 14px;
 
-  top: -2px;
-  left: 4px;
-
-  background-color: #aab7b9;
+  top: -6px;
+  left: 2px;
 
   @media only screen and (min-width: $hdm) {
-    width: 16px;
-    height: 16px;
+
   }
 
   @media only screen and (min-width: $laptop) {
-    width: 10px;
-    height: 10px;
+
   }
 
   @media only screen and (min-width: $widebook-hd) {
-    width: 16px;
-    height: 16px;
+
+
   }
 }
 

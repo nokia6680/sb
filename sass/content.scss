@@ -1,4 +1,30 @@
 .content {
   @include container;
   @include flex-setting(column, flex-start, center);
+
+  &__more {
+    @include font-setting($base-font, 1.375rem, 1, 900, #4a90e2);
+    @include flex-setting(column, center, center);
+
+    width: auto;
+    height: 46px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background-color: #fff137;
+    background-image: url('../img/btn-rounds.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    
+    box-shadow: 0 0 10px rgba(214, 202, 48, 0.5), inset 0 3px 5px rgba(255, 243, 87, 0.7), inset 0 -3px 5px rgba(229, 217, 49, 0.7);
+    border-radius: 12px;
+    border: none;
+
+    padding-left: 1.063rem;
+    padding-right: 1.063rem;
+
+    margin-bottom: 2.5rem;
+  }
 }
