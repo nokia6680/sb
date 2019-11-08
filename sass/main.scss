@@ -1,5 +1,24 @@
 .main {
   width: 100%;
-  
+
   @include flex-setting(column, flex-start, center);
+
+  background-image: url('../img/blob.png');
+  background-position: center bottom;
+  background-repeat: repeat-y;
+  background-size: contain;
+
+  &--time {
+    background-image: none;
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .main {
+    background-size: cover;
+    transition: 0.2s ease-in;
+
+    background-size: contain;
+    background-position: top center;
+  }
 }

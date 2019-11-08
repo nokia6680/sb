@@ -93,3 +93,28 @@
     z-index: 2;
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .popup-success {
+    &__wrapper {
+      width: 400px;
+      height: 300px;
+
+      padding-top: 1.25rem;
+
+      &::after {
+        width: 282px;
+        height: 99px;
+      }
+    }
+
+    &__title {
+      font-size: 1.75rem;
+    }
+
+    &__description {
+      font-size: 1rem;
+      max-width: 280px;
+    }
+  }
+}

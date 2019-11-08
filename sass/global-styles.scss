@@ -26,7 +26,8 @@ html {
 }
 
 body {
-  background-color: #cacaca;
+  background-color: #ff9da9;
+
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
@@ -42,9 +43,14 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+.body--time {
+  background-color: #f8e234;
+}
+
 .section {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 img {

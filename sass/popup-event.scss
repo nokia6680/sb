@@ -1,5 +1,5 @@
 .popup-event {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,10 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 1000;
+
+  &.active {
+    display: flex;
+  }
 
   &__wrapper {
     display: flex;
@@ -41,6 +45,9 @@
     border-radius: 100%;
 
     border: none;
+
+    cursor: pointer;
+    outline: none;
 
     top: 0.313rem;
     right: 0.313rem;
@@ -76,5 +83,33 @@
     max-width: 224px;
 
     margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .popup-event {
+    &__wrapper {
+      width: 400px;
+    }
+
+    &__close {
+      width: 26px;
+      height: 26px;
+
+      top: 0.313rem;
+      right: 0.313rem;
+
+      background-size: 14px 14px;
+    }
+
+    &__header {
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+    }
+
+    &__title {
+      font-size: 1rem;
+      max-width: 300px;
+    }
   }
 }

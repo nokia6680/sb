@@ -105,3 +105,64 @@
     transition: 0.1s ease-in;
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .reg-list {
+    &__item {
+      margin-bottom: 1.5rem;
+    }
+
+    &__error {
+      position: absolute;
+
+      font-size: 0.625rem;
+      bottom: -0.875rem;
+
+      &--required {
+        left: 1.875rem;
+      }
+    }
+
+    &__note {
+      width: 24px;
+      height: 24px;
+
+      top: 24px;
+      right: 0;
+    }
+
+    &__label {
+      font-size: 1rem;
+
+      margin-bottom: 0.25rem;
+
+      &--checkbox,
+      &--link {
+        font-size: 0.75rem;
+      }
+    }
+
+    &__input {
+      max-width: 280px;
+
+      border-width: 2px;
+
+      font-size: 1.125rem;
+
+      padding: 0.25rem 0.5rem;
+    }
+
+    &__checkbox + label {
+      @include checkbox-default;
+    }
+
+    &__checkbox + label::before {
+      @include custom-checkbox;
+    }
+
+    &__checkbox:checked + label::after {
+      @include checkbox-checked;
+      transition: 0.1s ease-in;
+    }
+  }
+}

@@ -2,12 +2,17 @@
   width: 100%;
   height: 32px;
 
-  @include flex-setting(row, space-between, center);
+  @include flex-setting(row, center, center);
   background-color: #fff;
 
   position: relative;
 
   z-index: 10;
+
+  &__container {
+    width: 100%;
+    @include flex-setting(row, space-between, center);
+  }
 
   &.active {
     &::after {
@@ -142,5 +147,43 @@
     top: 24px;
     left: 5px;
     width: 30px;
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .header-nav {
+    height: 48px;
+
+    &__container {
+      max-width: 718px;
+    }
+
+    &.active {
+      &::after {
+        display: none;
+      }
+    }
+
+    &__link {
+      font-size: 1.125rem;
+
+      margin-left: 0;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 1152px) {
+  .header-nav {
+    &__container {
+      max-width: 1104px;
+    }
+
+    &__link {
+      font-size: 1.375rem;
+    }
   }
 }

@@ -4,8 +4,9 @@
   @include flex-setting(column, flex-start, center);
 
   position: relative;
+  margin-bottom: 0.625rem;
 
-  &__logo {
+  &__upper {
     background-image: url('../img/header-bg.png');
     background-position: top center;
     background-repeat: no-repeat;
@@ -17,7 +18,101 @@
     height: 88px;
   }
 
+  &__logo {
+    height: 88px;
+    width: auto;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/bob.png');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      width: 94px;
+      height: 50px;
+
+      top: 0;
+      left: -90px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/patr.png');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      width: 86px;
+      height: 56px;
+
+      bottom: 0;
+      right: -86px;
+    }
+  }
+
   &__pic {
     max-height: 88px;
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .header {
+    margin-bottom: 1rem;
+
+    &__upper {
+      height: 152px;
+    }
+
+    &__logo {
+      height: 100%;
+
+      &::after {
+        width: 235px;
+        height: 131px;
+
+        left: -240px;
+
+        transition: 0.2s ease-in;
+      }
+
+      &::before {
+        width: 168px;
+        height: 109px;
+
+        right: -178px;
+
+        transition: 0.2s ease-in;
+      }
+    }
+    &__pic {
+      max-height: 152px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .header {
+    &__upper {
+      background-image: url('../img/1920px.png'), url('../img/header-bg.png');
+      background-position: 50% 50%, top center;
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto, cover;
+    }
+
+    &__logo {
+      &::after {
+        left: -400px;
+      }
+
+      &::before {
+        right: -235px;
+      }
+    }
   }
 }

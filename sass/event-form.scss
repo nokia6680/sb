@@ -85,3 +85,50 @@
     text-transform: uppercase;
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .event-form {
+    padding: 1.25rem 1.25rem;
+
+    &__wrapper {
+      margin-bottom: 1rem;
+    }
+
+    &__description {
+      max-width: 220px;
+
+      padding-top: 100px;
+
+      font-size: 0.75rem;
+      text-align: center;
+
+      margin-top: 0;
+      margin-bottom: 1.25rem;
+
+      position: relative;
+
+      &::after {
+        top: 16px;
+
+        width: 80px;
+        height: 74px;
+      }
+    }
+
+    &__input + label {
+      font-size: 1rem;
+      border-radius: 10px;
+
+      width: 200px;
+      height: 42px;
+    }
+
+    &__submit {
+      width: 200px;
+      height: 42px;
+
+
+      font-size: 1.125rem;
+    }
+  }
+}
