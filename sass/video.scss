@@ -10,6 +10,12 @@
   &__content {
     max-width: 272px;
   }
+
+  &__poster {
+    max-width: 272px;
+    height: 200px;
+    object-fit: contain;
+  }
 }
 
 @media only screen and (min-width: 360px) {
@@ -21,6 +27,13 @@
       width: 100%;
       height: 180px;
     }
+
+    &__poster {
+      max-width: 100%;
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
   }
 }
 
@@ -31,6 +44,27 @@
     &__content {
       width: 100%;
       height: 405px;
+    }
+
+    &__poster {
+      width: 100%;
+      height: 405px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .video {
+    margin-bottom: 1rem;
+
+    &__content {
+      width: 100%;
+      height: 623px;
+    }
+
+    &__poster {
+      width: 100%;
+      height: 623px;
     }
   }
 }

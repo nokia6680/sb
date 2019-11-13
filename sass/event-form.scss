@@ -16,6 +16,30 @@
 
     border: 1px dashed #979797;
     margin-bottom: 1rem;
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__result {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 5;
+
+    object-fit: cover;
   }
 
   &__description {
