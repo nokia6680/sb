@@ -16,12 +16,17 @@
 
   &__frame {
     max-height: 256px;
+    min-width: 256px;
 
     margin: 0.5rem 0.5rem;
+    @include flex-setting(column, center, center);
+
+    cursor: pointer;
   }
 
   &__pic {
     max-height: 256px;
+    max-width: 256px;
     object-fit: cover;
   }
 
@@ -99,10 +104,12 @@
   .grid-item {
     &__frame {
       max-height: 296px;
+      max-width: 296px;
     }
 
     &__pic {
       max-height: 296px;
+      max-width: 296px;
     }
 
     &__info {
@@ -139,23 +146,24 @@
 
 @media only screen and (min-width: 480px) {
   .grid-item {
+    &__frame {
+      max-width: 214px;
+      min-width: 214px;
+    }
+
+    &__pic {
+      max-width: 214px;
+      min-width: 214px;
+    }
     .instagram-media {
       min-width: 226px !important;
-      max-width: 226px;
+      max-width: 226px !important;
     }
   }
 }
 
 @media only screen and (min-width: $tablet) {
   .grid-item {
-    &__frame {
-      max-height: 296px;
-    }
-
-    &__pic {
-      max-height: 296px;
-    }
-
     &__info {
       padding-bottom: 0.875rem;
 
@@ -189,7 +197,7 @@
 
     .instagram-media {
       min-width: 226px !important;
-      max-width: 100%;
+      max-width: 100% !important;
     }
 
     &.wide-2 {
@@ -202,10 +210,14 @@
   .grid-item {
     &__frame {
       max-height: 248px;
+      min-width: 248px;
+      max-width: 248px;
     }
 
     &__pic {
       max-height: 248px;
+      min-width: 248px;
+      max-width: 248px;
     }
 
     &__info {
