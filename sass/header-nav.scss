@@ -83,7 +83,7 @@
       position: absolute;
       height: 5px;
       width: 100%;
-      background: #ff9ea9;
+      background: #86cddd;
       border-radius: 0;
       opacity: 1;
       left: 0;
@@ -121,7 +121,7 @@
   }
 
   &__toggle.open span {
-    background-color: #ff9ea9;
+    background-color: #86cddd;
   }
 
   &__toggle.open span:nth-child(1) {

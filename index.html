@@ -8,11 +8,10 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
-
-	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/pic.js"></script>
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -46,6 +45,9 @@
 				<a class="header__link" href="index.html" target="_self">
 					<img class="header__pic" src="img/bob-logo.svg" alt="SpongeBob Logo" />
 				</a>
+				<a class="header__link" href="https://www.toy.ru/" target="_blank">
+					<img class="header__link-pic" src="img/toy.png" alt="Toy.ru" />
+				</a>
 			</div>
 		</div>
 		<nav class="header__nav header-nav">
@@ -76,34 +78,13 @@
 	</header>
 	<!--Main-->
 	<main class="main">
-		<section class="main__time section time" style="display: none;">
-			<h1 class="time__title">Скоро здесь будет</h1>
-			<h2 class="time__subtitle">что-то очень интересное</h2>
-			<ul class="time__list time-list" id="time-list">
-				<li class="time-list__item time-list__item--days">
-					<p class="time-list__counter time-list__counter--days days">00</p>
-					<span class="time-list__name daysNum" id="daysNum">дней:</span>
-				</li>
-				<li class="time-list__item time-list__item--hours">
-					<p class="time-list__counter time-list__counter--hours hours">00</p>
-					<span class="time-list__name hoursNum" id="hoursNum">часов:</span>
-				</li>
-				<li class="time-list__item time-list__item--minutes">
-					<p class="time-list__counter time-list__counter--minutes minutes">00</p>
-					<span class="time-list__name minutesNum" id="minutesNum">минут:</span>
-				</li>
-				<li class="time-list__item time-list__item--seconds">
-					<p class="time-list__counter time-list__counter--seconds seconds">00</p>
-					<span class="time-list__name secondsNum" id="secondsNum">секунд:</span>
-				</li>
-			</ul>
-		</section>
 		<section class="main__content content">
 			<!--Promo video section-->
 			<div class="main__video video">
 				<img class="video__poster" src="img/poster.jpg" alt="Video poster" />
 				<iframe class="video__content" src="https://www.youtube.com/embed/9r-PglgMlFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: none;"></iframe>
 			</div>
+			<!--Intro description block-->
 			<div class="content__event event">
 				<div class="event__image">
 					<picture class="event__frame">
@@ -120,7 +101,45 @@
 					</div>
 				</div>
 			</div>
+			<!--Prize slider section-->
+			<div class="content__prize prize">
+				<div class="prize__wrapper">
+					<div class="prize__item prize__item--1">
+						<img class="prize__pic" src="img/prize-1.png" alt="Prize-1" />
+						<a class="prize__link" href="https://www.toy.ru/catalog/toys-figurki/spongebob_eu690701_spanch_bob_retro_plastik_11_5_sm/" target="_blank">Купить!</a>
+					</div>
+					<div class="prize__item prize__item--2">
+						<img class="prize__pic" src="img/prize-2.png" alt="Prize-2" />
+						<a class="prize__link" href="https://www.toy.ru/catalog/toys-figurki/spongebob_eu691003_patrik_udivlennyy_mem_kollektsiya_20_sm_plastikovyy/" target="_blank">Купить!</a>
+					</div>
+					<div class="prize__item prize__item--3">
+						<img class="prize__pic" src="img/prize-6.png" alt="Prize-3" />
+						<a class="prize__link" href="https://www.toy.ru/catalog/toys-syuzhetno-rolevye-nabory/spongebob_eu690605_shlyapa_naduvnaya_v_vide_personazha_spanch_bob_ulybaetsya/" target="_blank">Купить!</a>
+					</div>
+					<div class="prize__item prize__item--4">
+						<img class="prize__pic" src="img/prize-4.png" alt="Prize-4" />
+						<a class="prize__link" href="https://www.toy.ru/catalog/mininabory/spongebob_eu690200_igrovoy_nabor_so_slizyu_v_assortimente/" target="_blank">Купить!</a>
+					</div>
+					<div class="prize__item prize__item--5">
+						<img class="prize__pic" src="img/prize-3.png" alt="Prize-5" />
+						<a class="prize__link" href="https://www.toy.ru/catalog/lyubimye_geroi/spongebob_eu690902_plyushevyy_spanch_bob_so_zvuk_effektami_pukaet_20_sm/" target="_blank">Купить!</a>
+					</div>
+					<div class="prize__item prize__item--6">
+						<img class="prize__pic" src="img/prize-5.png" alt="Prize-6" />
+						<a class="prize__link" href="https://www.toy.ru/catalog/lyubimye_geroi/spongebob_eu690903_plyushevyy_spanch_bob_so_zvuk_effektami_rygaet_20_sm/" target="_blank">Купить!</a>
+					</div>
+				</div>
+				<div class="prize-prev"></div>
+				<div class="prize-next"></div>
+			</div>
+			<!--Main content grid layout-->
 			<div class="main__grid grid-layout">
+				<!--Single grid STRICTLY PINNED TO TOP-->
+				<div class="grid-layout__item grid-item grid-item--voice">
+					<a class="grid-item__frame grid-item__frame--voice" href="https://tvoygolos.nickelodeon.ru/" target="_blank">
+						<img class="grid-item__pic" src="img/voice-link.jpg" alt="Нам нужен твой голос!" />
+					</a>
+				</div>
 				<!--Single grid item EMBED instagram-->
 				<div class="grid-layout__item grid-item wide-2">
 					<iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/tv/B3uJ3BgiBQT/embed/captioned/?cr=1&amp;v=12&amp;wp=540&amp;rd=http%3A%2F%2Flocalhost%3A3000&amp;rp=%2F#%7B%22ci%22%3A0%2C%22os%22%3A424.92000001948327%2C%22ls%22%3A201.50500000454485%2C%22le%22%3A203.125%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="100%" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white; max-width: 100%; width: calc(100% - 2px); border-radius: 0; border: none; box-shadow: none; display: block; margin: 0px; padding: 0px;"></iframe>
@@ -477,6 +496,8 @@
 			<p class="popup-success__description">Твой рисунок скоро будет опубликован. Победитель будет объявлен 17 января.</p>
 		</div>
 	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 	<script async defer src="https://instagram.com/embed.js"></script>
 	<script src="js/script.js"></script>

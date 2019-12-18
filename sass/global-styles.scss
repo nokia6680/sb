@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  background-color: #ff9da9;
+  background-color: #c6f1f9;
 
   min-width: 320px;
   margin: 0 auto;
@@ -70,7 +70,7 @@ img {
   &__bg {
     background: rgba(0,0,0,0.8);
     position: absolute;
-    z-index: 1;
+    z-index: 990;
     height: 100%;
     width: 100%;
   }

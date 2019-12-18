@@ -22,6 +22,15 @@
     @include flex-setting(column, center, center);
 
     cursor: pointer;
+
+    &--voice {
+      text-decoration: none;
+      .grid-item__pic {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
   }
 
   &__pic {
@@ -105,6 +114,16 @@
     &__frame {
       max-height: 296px;
       max-width: 296px;
+
+      &--voice {
+        min-width: 286px;
+        text-decoration: none;
+        .grid-item__pic {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
     }
 
     &__pic {

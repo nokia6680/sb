@@ -20,6 +20,47 @@ document.querySelector('.popup-event__close').onclick = function(){
 	EventForm.classList.remove('active');
 };
 
+$(document).ready(function(){
+  $(".prize__wrapper").slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    fade: false,
+    arrows: true,
+    dots: false,
+    prevArrow: '<div class="prize-prev"></div>',
+    nextArrow: '<div class="prize-next"></div>',
+		responsive: [
+      {
+        breakpoint: 9999,
+        settings: {
+					infinite: true,
+			    slidesToShow: 2,
+			    slidesToScroll: 1,
+			    fade: false,
+			    arrows: true,
+			    dots: false,
+			    prevArrow: '<div class="prize-prev"></div>',
+			    nextArrow: '<div class="prize-next"></div>'
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+					infinite: true,
+			    slidesToShow: 1,
+			    slidesToScroll: 1,
+			    fade: false,
+			    arrows: true,
+			    dots: false,
+			    prevArrow: '<div class="prize-prev"></div>',
+			    nextArrow: '<div class="prize-next"></div>'
+        }
+      }
+    ]
+  });
+});
+
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor((t / 1000) % 60);
